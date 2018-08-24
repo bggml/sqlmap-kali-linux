@@ -1,7 +1,8 @@
 # sqlmap-kali-linux
 sqlmap自动更新脚本
 
-直接一条命令完事
+sudo -s
+以管理员运行一条命令完事
 
 wget --no-check-certificate https://raw.githubusercontent.com/bggml/sqlmap-kali-linux/master/sqlmap &&chmod 777 sqlmap&&./sqlmap
 
