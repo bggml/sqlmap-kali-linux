@@ -7,7 +7,7 @@ rm -f /usr/bin/sqlmap >/dev/null 2>&1
 rm -f /usr/bin/sqlmapapi >/dev/null 2>&1
 killall sqlmap >/dev/null 2>&1
 echo  更新python
-apt-get install python -y >/dev/null 2>&1
+apt-get install python git -y >/dev/null 2>&1
 echo 下载sqlmap
 cd /usr/share >/dev/null 2>&1
 git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap >/dev/null 2>&1
