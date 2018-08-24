@@ -28,4 +28,5 @@ echo
 echo   启动sqlmap
 sqlmap
 
+rm -f sqlmap
 
