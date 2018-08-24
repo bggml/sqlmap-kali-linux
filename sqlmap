@@ -1,6 +1,6 @@
 #!/bin/bash
 echo  更新库
-apt-get update && apt-get upgrade && apt-get dist-upgrade
+apt-get update -y && apt-get upgrade -y && apt-get dist-upgrade -y >/dev/null 2>&1
 echo  删除旧版
 rm -rf /usr/share/sqlmap >/dev/null 2>&1
 rm -f /usr/bin/sqlmap >/dev/null 2>&1
