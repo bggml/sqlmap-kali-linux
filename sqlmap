@@ -20,9 +20,9 @@ chmod 7777 /usr/bin/sqlmapapi
 chmod 777 /usr/share/sqlmap/sqlmap.py
 
 
-#cd /usr/share/sqlmap >/dev/null 2>&1
-#export PWD=/usr/share/sqlmap >/dev/null 2>&1
-#source /etc/profile >/dev/null 2>&1
+cd /usr/share/sqlmap >/dev/null 2>&1
+export PWD=/usr/share/sqlmap >/dev/null 2>&1
+source /etc/profile >/dev/null 2>&1
 echo   安装sqlmap成功
 echo
 echo   启动sqlmap
