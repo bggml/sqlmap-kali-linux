@@ -2,9 +2,10 @@
 echo  更新库
 apt-get update -y && apt-get upgrade -y && apt-get dist-upgrade -y >/dev/null 2>&1
 echo  删除旧版
+apt-get install sqlmap* -y
 rm -rf /usr/share/sqlmap >/dev/null 2>&1
-rm -f /usr/bin/sqlmap >/dev/null 2>&1
-rm -f /usr/bin/sqlmapapi >/dev/null 2>&1
+#rm -f /usr/bin/sqlmap >/dev/null 2>&1
+#rm -f /usr/bin/sqlmapapi >/dev/null 2>&1
 killall sqlmap >/dev/null 2>&1
 echo  更新python
 apt-get install python git -y >/dev/null 2>&1
@@ -14,8 +15,8 @@ git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap >/dev/nul
 echo  下载完成更新环境变量
 python -m compileall /usr/share/sqlmap/ >/dev/null 2>&1
 
-echo /usr/share/sqlmap/sqlmap.py > /usr/bin/sqlmap
-echo /usr/share/sqlmap/sqlmapapi.py > /usr/bin/sqlmapapi
+#echo /usr/share/sqlmap/sqlmap.py > /usr/bin/sqlmap
+#echo /usr/share/sqlmap/sqlmapapi.py > /usr/bin/sqlmapapi
 
 chmod 7777 /usr/bin/sqlmap
 chmod 7777 /usr/bin/sqlmapapi
